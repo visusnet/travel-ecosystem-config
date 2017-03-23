@@ -14,9 +14,7 @@ zuul:
     user-service:
       path: /user/**
       serviceId: user-service
-    oauth:
-      path: /oauth/**
-      serviceId: user-service
+      sensitiveHeaders:
 security:
   oauth2:
     resource:
@@ -43,9 +41,7 @@ zuul:
     user-service:
       path: /user/**
       serviceId: user-service
-    oauth:
-      path: /oauth/**
-      serviceId: user-service
+      sensitiveHeaders:
 security:
   oauth2:
     resource:
@@ -67,10 +63,6 @@ zuul:
     travel-destination-service: /travelDestination/**
     user-service:
       path: /user/**
-      serviceId: user-service
-      sensitiveHeaders:
-    oauth:
-      path: /oauth/**
       serviceId: user-service
       sensitiveHeaders:
 security:
