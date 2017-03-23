@@ -15,7 +15,9 @@ zuul:
 security:
   oauth2:
     resource:
-      userInfoUri: ${vcap.services.user-service.credentials.uri:http://localhost:8181}/uaa/user
+      jwt:
+        key-value: aTokenSigningKey
+#      userInfoUri: ${vcap.services.user-service.credentials.uri:http://localhost:8181}/uaa/user
   ignored: /user/uaa/oauth/**
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
 ribbon:
@@ -37,7 +39,9 @@ zuul:
 security:
   oauth2:
     resource:
-      userInfoUri: http://localhost:8181/uaa/user
+      jwt:
+        key-value: aTokenSigningKey
+#      userInfoUri: http://localhost:8181/uaa/user
   ignored: /user/uaa/oauth/**
 ---
 spring:
@@ -55,7 +59,9 @@ zuul:
 security:
   oauth2:
     resource:
-      userInfoUri: http://${DOCKER_IP:192.168.99.100}:8181/uaa/user
+      jwt:
+        key-value: aTokenSigningKey
+#      userInfoUri: http://${DOCKER_IP:192.168.99.100}:8181/uaa/user
   ignored: /user/uaa/oauth/**
 eureka:
   instance:
