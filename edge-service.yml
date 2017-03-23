@@ -14,17 +14,17 @@ zuul:
     user-service:
       path: /user/**
       service-id: user-service
-#    oauth-service:
-#      path: /user/oauth/**
-#      service-id: user-service
+    oauth-service:
+      path: /auth/**
+      service-id: user-service
       sensitive-headers:
 security:
+  ignored: /auth/**
   oauth2:
     resource:
       jwt:
         key-value: aTokenSigningKey
 #      userInfoUri: ${vcap.services.user-service.credentials.uri:http://localhost:8181}/user
-#  ignored: /oauth/**
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
 ribbon:
   ConnectTimeout: 3000
@@ -44,11 +44,12 @@ zuul:
     user-service:
       path: /user/**
       service-id: user-service
-#    oauth-service:
-#      path: /user/oauth/**
-#      service-id: user-service
+    oauth-service:
+      path: /auth/**
+      service-id: user-service
       sensitive-headers:
 security:
+  ignored: /auth/**
   oauth2:
     resource:
       jwt:
@@ -70,11 +71,12 @@ zuul:
     user-service:
       path: /user/**
       service-id: user-service
-#    oauth-service:
-#      path: /user/oauth/**
-#      service-id: user-service
+    oauth-service:
+      path: /auth/**
+      service-id: user-service
       sensitive-headers:
 security:
+  ignored: /auth/**
   oauth2:
     resource:
       jwt:
