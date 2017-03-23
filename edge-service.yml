@@ -14,9 +14,9 @@ zuul:
     user-service:
       path: /user/**
       service-id: user-service
-    oauth-service:
-      path: /user/oauth/**
-      service-id: user-service
+#    oauth-service:
+#      path: /user/oauth/**
+#      service-id: user-service
       sensitive-headers:
 security:
   oauth2:
@@ -44,9 +44,9 @@ zuul:
     user-service:
       path: /user/**
       service-id: user-service
-    oauth-service:
-      path: /user/oauth/**
-      service-id: user-service
+#    oauth-service:
+#      path: /user/oauth/**
+#      service-id: user-service
       sensitive-headers:
 security:
   oauth2:
@@ -70,9 +70,9 @@ zuul:
     user-service:
       path: /user/**
       service-id: user-service
-    oauth-service:
-      path: /user/oauth/**
-      service-id: user-service
+#    oauth-service:
+#      path: /user/oauth/**
+#      service-id: user-service
       sensitive-headers:
 security:
   oauth2:
