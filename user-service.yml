@@ -52,6 +52,7 @@ spring:
     username: root
     password: dbpass
     initialize: true
+  jpa:
     hibernate:
       ddl-auto: create-drop
 eureka:
