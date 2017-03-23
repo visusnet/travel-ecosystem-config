@@ -11,10 +11,7 @@ zuul:
     order-service: /order/**
     shopping-cart-service: /shoppingcart/**
     travel-destination-service: /travelDestination/**
-    user-service:
-      path: /user/**
-      serviceId: user-service
-      sensitiveHeaders:
+    user-service: /user/**
 security:
   oauth2:
     resource:
@@ -38,10 +35,7 @@ zuul:
     order-service: /order/**
     shopping-cart-service: /shoppingcart/**
     travel-destination-service: /travelDestination/**
-    user-service:
-      path: /user/**
-      serviceId: user-service
-      sensitiveHeaders:
+    user-service: /user/**
 security:
   oauth2:
     resource:
@@ -61,10 +55,7 @@ zuul:
     psycho-test-service: /psychoTest/**
     shopping-cart-service: /shoppingcart/**
     travel-destination-service: /travelDestination/**
-    user-service:
-      path: /user/**
-      serviceId: user-service
-      sensitiveHeaders:
+    user-service: /user/**
 security:
   oauth2:
     resource:
