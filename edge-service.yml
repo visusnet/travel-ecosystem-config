@@ -16,6 +16,7 @@ zuul:
       path: /user/**
       service-id: user-service
       sensitive-headers:
+      stripPrefix: false
 security:
   ignored: /auth/**
   oauth2:
@@ -44,6 +45,7 @@ zuul:
       path: /user/**
       service-id: user-service
       sensitive-headers:
+      stripPrefix: false
 security:
   ignored: /auth/**
   oauth2:
@@ -69,6 +71,7 @@ zuul:
       path: /user/**
       service-id: user-service
       sensitive-headers:
+      stripPrefix: false
 security:
   ignored: /auth/**
   oauth2:
