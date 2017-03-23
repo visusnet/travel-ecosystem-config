@@ -9,16 +9,21 @@ zuul:
   ignoredPatterns: /**/api/**
   routes:
     order-service: /order/**
-    user-service: /user/**
     shopping-cart-service: /shoppingcart/**
     travel-destination-service: /travelDestination/**
+    user-service:
+      path: /user/**
+      serviceId: user-service
+    oauth:
+      path: /oauth/**
+      serviceId: user-service
 security:
   oauth2:
     resource:
       jwt:
         key-value: aTokenSigningKey
 #      userInfoUri: ${vcap.services.user-service.credentials.uri:http://localhost:8181}/user
-  ignored: /user/oauth/**
+  ignored: /oauth/**
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
 ribbon:
   ConnectTimeout: 3000
@@ -33,16 +38,21 @@ zuul:
   ignoredPatterns: /**/api/**
   routes:
     order-service: /order/**
-    user-service: /user/**
     shopping-cart-service: /shoppingcart/**
     travel-destination-service: /travelDestination/**
+    user-service:
+      path: /user/**
+      serviceId: user-service
+    oauth:
+      path: /oauth/**
+      serviceId: user-service
 security:
   oauth2:
     resource:
       jwt:
         key-value: aTokenSigningKey
 #      userInfoUri: http://localhost:8181/user
-  ignored: /user/oauth/**
+  ignored: /oauth/**
 ---
 spring:
   profiles: docker
@@ -53,16 +63,21 @@ zuul:
   ignoredPatterns: /**/api/**
   routes:
     order-service: /order/**
-    user-service: /user/**
     shopping-cart-service: /shoppingcart/**
     travel-destination-service: /travelDestination/**
+    user-service:
+      path: /user/**
+      serviceId: user-service
+    oauth:
+      path: /oauth/**
+      serviceId: user-service
 security:
   oauth2:
     resource:
       jwt:
         key-value: aTokenSigningKey
 #      userInfoUri: http://${DOCKER_IP:192.168.99.100}:8181/user
-  ignored: /user/oauth/**
+  ignored: /oauth/**
 eureka:
   instance:
     prefer-ip-address: true
