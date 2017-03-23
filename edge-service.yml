@@ -7,15 +7,13 @@ spring:
 zuul:
   ignored-services: '*'
   ignoredPatterns: /**/api/**
+  add-proxy-headers: true
   routes:
-    order-service: /order/**
+    psycho-test-service: /psychoTest/**
     shopping-cart-service: /shoppingcart/**
     travel-destination-service: /travelDestination/**
     user-service:
       path: /user/**
-      service-id: user-service
-    oauth-service:
-      path: /auth/**
       service-id: user-service
       sensitive-headers:
 security:
@@ -37,15 +35,13 @@ spring:
 zuul:
   ignored-services: '*'
   ignoredPatterns: /**/api/**
+  add-proxy-headers: true
   routes:
-    order-service: /order/**
+    psycho-test-service: /psychoTest/**
     shopping-cart-service: /shoppingcart/**
     travel-destination-service: /travelDestination/**
     user-service:
       path: /user/**
-      service-id: user-service
-    oauth-service:
-      path: /auth/**
       service-id: user-service
       sensitive-headers:
 security:
@@ -64,15 +60,13 @@ spring:
 zuul:
   ignored-services: '*'
   ignoredPatterns: /**/api/**
+  add-proxy-headers: true
   routes:
     psycho-test-service: /psychoTest/**
     shopping-cart-service: /shoppingcart/**
     travel-destination-service: /travelDestination/**
     user-service:
       path: /user/**
-      service-id: user-service
-    oauth-service:
-      path: /auth/**
       service-id: user-service
       sensitive-headers:
 security:
