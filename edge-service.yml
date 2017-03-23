@@ -62,15 +62,17 @@ zuul:
   ignored-services: '*'
   ignoredPatterns: /**/api/**
   routes:
-    order-service: /order/**
+    psycho-test-service: /psychoTest/**
     shopping-cart-service: /shoppingcart/**
     travel-destination-service: /travelDestination/**
     user-service:
       path: /user/**
       serviceId: user-service
+      sensitiveHeaders:
     oauth:
       path: /oauth/**
       serviceId: user-service
+      sensitiveHeaders:
 security:
   oauth2:
     resource:
