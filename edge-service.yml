@@ -19,6 +19,7 @@ zuul:
       service-id: user-service
       sensitive-headers:
 security:
+  ignored: /user/oauth/**
   oauth2:
     resource:
       jwt:
@@ -49,6 +50,7 @@ zuul:
       service-id: user-service
       sensitive-headers:
 security:
+  ignored: /user/oauth/**
   oauth2:
     resource:
       jwt:
@@ -75,6 +77,7 @@ zuul:
       service-id: user-service
       sensitive-headers:
 security:
+  ignored: /user/oauth/**
   oauth2:
     resource:
       jwt:
