@@ -17,8 +17,8 @@ security:
     resource:
       jwt:
         key-value: aTokenSigningKey
-#      userInfoUri: ${vcap.services.user-service.credentials.uri:http://localhost:8181}/uaa/user
-  ignored: /user/uaa/oauth/**
+#      userInfoUri: ${vcap.services.user-service.credentials.uri:http://localhost:8181}/user
+  ignored: /user/oauth/**
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
 ribbon:
   ConnectTimeout: 3000
@@ -41,8 +41,8 @@ security:
     resource:
       jwt:
         key-value: aTokenSigningKey
-#      userInfoUri: http://localhost:8181/uaa/user
-  ignored: /user/uaa/oauth/**
+#      userInfoUri: http://localhost:8181/user
+  ignored: /user/oauth/**
 ---
 spring:
   profiles: docker
@@ -61,8 +61,8 @@ security:
     resource:
       jwt:
         key-value: aTokenSigningKey
-#      userInfoUri: http://${DOCKER_IP:192.168.99.100}:8181/uaa/user
-  ignored: /user/uaa/oauth/**
+#      userInfoUri: http://${DOCKER_IP:192.168.99.100}:8181/user
+  ignored: /user/oauth/**
 eureka:
   instance:
     prefer-ip-address: true
