@@ -10,7 +10,6 @@ zuul:
   add-proxy-headers: true
   routes:
     psycho-test-service: /psychoTest/**
-    shopping-cart-service: /shoppingcart/**
     travel-destination-service: /travelDestination/**
     user-service:
       path: /user/**
@@ -39,7 +38,6 @@ zuul:
   add-proxy-headers: true
   routes:
     psycho-test-service: /psychoTest/**
-    shopping-cart-service: /shoppingcart/**
     travel-destination-service: /travelDestination/**
     user-service:
       path: /user/**
@@ -65,7 +63,6 @@ zuul:
   add-proxy-headers: true
   routes:
     psycho-test-service: /psychoTest/**
-    shopping-cart-service: /shoppingcart/**
     travel-destination-service: /travelDestination/**
     user-service:
       path: /user/**
