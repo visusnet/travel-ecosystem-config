@@ -10,6 +10,7 @@ server:
 security:
   oauth2:
     resource:
+      filter-order = 3
       jwt:
         key-value: aTokenSigningKey
     client:
@@ -29,6 +30,7 @@ server:
 security:
   oauth2:
     resource:
+      filter-order = 3
       jwt:
         key-value: aTokenSigningKey
     client:
@@ -42,6 +44,10 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+ribbon:
+  http:
+    client:
+      enabled: true
 ---
 spring:
   profiles: docker
@@ -59,6 +65,7 @@ server:
 security:
   oauth2:
     resource:
+      filter-order = 3
       jwt:
         key-value: aTokenSigningKey
     client:
@@ -71,6 +78,10 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://discovery-service:8761/eureka/
+ribbon:
+  http:
+    client:
+      enabled: true
 ---
 spring:
   application:
@@ -84,6 +95,7 @@ spring:
 security:
   oauth2:
     resource:
+      filter-order = 3
       jwt:
         key-value: aTokenSigningKey
     client:
