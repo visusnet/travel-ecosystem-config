@@ -10,7 +10,7 @@ server:
 security:
   oauth2:
     resource:
-      filter-order = 3
+      filter-order: 3
       jwt:
         key-value: aTokenSigningKey
     client:
@@ -30,7 +30,7 @@ server:
 security:
   oauth2:
     resource:
-      filter-order = 3
+      filter-order: 3
       jwt:
         key-value: aTokenSigningKey
     client:
@@ -65,7 +65,7 @@ server:
 security:
   oauth2:
     resource:
-      filter-order = 3
+      filter-order: 3
       jwt:
         key-value: aTokenSigningKey
     client:
@@ -95,7 +95,7 @@ spring:
 security:
   oauth2:
     resource:
-      filter-order = 3
+      filter-order: 3
       jwt:
         key-value: aTokenSigningKey
     client:
