@@ -6,11 +6,17 @@ spring:
   profiles: cloud
 zuul:
   ignored-services: '*'
-  ignoredPatterns: /**/api/**
+  ignored-patterns: /**/api/**
   add-proxy-headers: true
   routes:
-    psycho-test-service: /psychoTest/**
-    travel-destination-service: /travelDestination/**
+    psycho-test-service:
+      path: /psychoTest/**
+      service-id: psycho-test-service
+      stripPrefix: false
+    travel-destination-service:
+      path: /travelDestination/**
+      service-id: travel-destination-service
+      stripPrefix: false
     user-service:
       path: /user/**
       service-id: user-service
@@ -34,11 +40,17 @@ spring:
     name: edge-service
 zuul:
   ignored-services: '*'
-  ignoredPatterns: /**/api/**
+  ignored-patterns: /**/api/**
   add-proxy-headers: true
   routes:
-    psycho-test-service: /psychoTest/**
-    travel-destination-service: /travelDestination/**
+    psycho-test-service:
+      path: /psychoTest/**
+      service-id: psycho-test-service
+      stripPrefix: false
+    travel-destination-service:
+      path: /travelDestination/**
+      service-id: travel-destination-service
+      stripPrefix: false
     user-service:
       path: /user/**
       service-id: user-service
@@ -51,7 +63,6 @@ security:
     resource:
       jwt:
         key-value: aTokenSigningKey
-#      userInfoUri: http://localhost:8181/user
 ---
 spring:
   profiles: docker
@@ -59,11 +70,17 @@ spring:
     name: edge-service
 zuul:
   ignored-services: '*'
-  ignoredPatterns: /**/api/**
+  ignored-patterns: /**/api/**
   add-proxy-headers: true
   routes:
-    psycho-test-service: /psychoTest/**
-    travel-destination-service: /travelDestination/**
+    psycho-test-service:
+      path: /psychoTest/**
+      service-id: psycho-test-service
+      stripPrefix: false
+    travel-destination-service:
+      path: /travelDestination/**
+      service-id: travel-destination-service
+      stripPrefix: false
     user-service:
       path: /user/**
       service-id: user-service
