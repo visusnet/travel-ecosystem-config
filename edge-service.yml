@@ -12,16 +12,13 @@ zuul:
     psycho-test-service:
       path: /psychoTest/**
       service-id: psycho-test-service
-      stripPrefix: false
     travel-destination-service:
       path: /travelDestination/**
       service-id: travel-destination-service
-      stripPrefix: false
     user-service:
       path: /user/**
       service-id: user-service
       sensitive-headers:
-      stripPrefix: false
 security:
   basic:
     enabled: false
@@ -47,16 +44,13 @@ zuul:
     psycho-test-service:
       path: /psychoTest/**
       service-id: psycho-test-service
-      stripPrefix: false
     travel-destination-service:
       path: /travelDestination/**
       service-id: travel-destination-service
-      stripPrefix: false
     user-service:
       path: /user/**
       service-id: user-service
       sensitive-headers:
-      stripPrefix: false
 security:
   basic:
     enabled: false
@@ -78,16 +72,13 @@ zuul:
     psycho-test-service:
       path: /psychoTest/**
       service-id: psycho-test-service
-      stripPrefix: false
     travel-destination-service:
       path: /travelDestination/**
       service-id: travel-destination-service
-      stripPrefix: false
     user-service:
       path: /user/**
       service-id: user-service
       sensitive-headers:
-      stripPrefix: false
 security:
   basic:
     enabled: false
