@@ -19,6 +19,7 @@ spring:
   profiles: development
   jpa:
     show_sql: false
+    # deprecated:
     database: H2
   datasource:
     url: jdbc:h2:mem:testdb;DB_CLOSE_ON_EXIT=FALSE
@@ -90,6 +91,7 @@ spring:
   profiles: test
   jpa:
     show_sql: false
+    # deprecated:
     database: H2
   datasource:
     url: jdbc:h2:mem:testdb;DB_CLOSE_ON_EXIT=FALSE
