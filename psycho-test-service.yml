@@ -104,6 +104,10 @@ security:
     client:
       client-id: acme
       access-token-uri: http://localhost:8787
+management:
+  security:
+    enabled:
+      false
 ribbon:
   http:
     client:
