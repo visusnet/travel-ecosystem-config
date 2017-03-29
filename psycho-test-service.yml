@@ -6,7 +6,6 @@ spring:
   profiles: cloud
 server:
   port: 8383
-  contextPath: /psychoTest
 security:
   oauth2:
     resource:
@@ -27,7 +26,6 @@ spring:
     initialize: false
 server:
   port: 8383
-  contextPath: /psychoTest
 security:
   oauth2:
     resource:
@@ -62,7 +60,6 @@ spring:
       ddl-auto: create-drop
 server:
   port: 8383
-  contextPath: /psychoTest
 security:
   oauth2:
     resource:
@@ -71,6 +68,10 @@ security:
         key-value: aTokenSigningKey
     client:
       client-id: acme
+management:
+  security:
+    enabled:
+      false
 eureka:
   instance:
     prefer-ip-address: true

@@ -2,8 +2,6 @@ spring:
   profiles:
     active: development
 ---
-server:
-  contextPath: /user
 security:
   user:
     password: password
@@ -13,7 +11,6 @@ spring:
 ---
 server:
   port: 8181
-  contextPath: /user
 security:
   user:
     password: password
@@ -40,7 +37,6 @@ eureka:
 ---
 server:
   port: 8181
-  contextPath: /user
 security:
   user:
     password: password
