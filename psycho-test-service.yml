@@ -34,7 +34,7 @@ security:
         key-value: aTokenSigningKey
     client:
       client-id: acme
-logging.level.org.springframework.security: DEBUG
+logging.level.org.springframework.security: ERROR
 eureka:
   instance:
     prefer-ip-address: true

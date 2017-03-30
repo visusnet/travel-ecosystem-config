@@ -22,7 +22,7 @@ management:
   security:
     enabled:
       false
-logging.level.org.springframework.security: DEBUG
+logging.level.org.springframework.security: ERROR
 spring:
   profiles: development
   jpa:
@@ -55,7 +55,7 @@ management:
   security:
     enabled:
       false
-logging.level.org.springframework.security: DEBUG
+logging.level.org.springframework.security: ERROR
 spring:
   profiles: docker
   datasource:
