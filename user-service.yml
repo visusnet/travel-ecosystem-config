@@ -18,6 +18,10 @@ security:
   user:
     password: password
   enable-csrf: false
+management:
+  security:
+    enabled:
+      false
 logging.level.org.springframework.security: DEBUG
 spring:
   profiles: development
@@ -47,6 +51,10 @@ security:
   user:
     password: password
   enable-csrf: false
+management:
+  security:
+    enabled:
+      false
 logging.level.org.springframework.security: DEBUG
 spring:
   profiles: docker
