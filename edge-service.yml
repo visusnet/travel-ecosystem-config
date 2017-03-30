@@ -87,6 +87,10 @@ security:
       filter-order: 3
       jwt:
         key-value: aTokenSigningKey
+management:
+  security:
+    enabled:
+      false
 eureka:
   instance:
     prefer-ip-address: true
