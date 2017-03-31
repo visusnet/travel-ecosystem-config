@@ -90,4 +90,7 @@ security:
         key-value: aTokenSigningKey
     client:
       client-id: acme
-      access-token-uri: http://localhost:8787
+ribbon:
+  http:
+    client:
+      enabled: true
