@@ -2,13 +2,6 @@ spring:
   profiles:
     active: development
 ---
-security:
-  user:
-    password: password
-  enable-csrf: false
-spring:
-  profiles: cloud
----
 server:
   port: 8181
 security:

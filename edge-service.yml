@@ -3,36 +3,6 @@ spring:
     active: development
 ---
 spring:
-  profiles: cloud
-zuul:
-  ignored-services: '*'
-  ignored-patterns: /**/api/**
-  add-proxy-headers: true
-  routes:
-    psycho-test-service:
-      path: /psychoTest/**
-      service-id: psycho-test-service
-    travel-destination-service:
-      path: /travelDestination/**
-      service-id: travel-destination-service
-    user-service:
-      path: /user/**
-      service-id: user-service
-      sensitive-headers:
-security:
-  basic:
-    enabled: false
-  oauth2:
-    resource:
-      filter-order: 3
-      jwt:
-        key-value: aTokenSigningKey
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
-ribbon:
-  ConnectTimeout: 3000
-  ReadTimeout: 60000
----
-spring:
   profiles: development
   application:
     name: edge-service
