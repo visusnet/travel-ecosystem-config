@@ -7,7 +7,7 @@ spring:
   jpa:
     show_sql: false
     # deprecated:
-    database: H2
+    #database: H2
   datasource:
     url: jdbc:h2:mem:testdb;DB_CLOSE_ON_EXIT=FALSE
     initialize: false
@@ -79,7 +79,7 @@ spring:
   jpa:
     show_sql: false
     # deprecated:
-    database: H2
+    #database: H2
   datasource:
     url: jdbc:h2:mem:testdb;DB_CLOSE_ON_EXIT=FALSE
 security:
