@@ -37,7 +37,7 @@ ribbon:
 spring:
   profiles: docker
   datasource:
-    url: jdbc:mysql://mysql:3306/dev
+    url: jdbc:mysql://${MYSQL_SERVER:mysql}:3306/dev
     username: root
     password: dbpass
     initialize: true
