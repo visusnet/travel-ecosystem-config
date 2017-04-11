@@ -17,6 +17,9 @@ zuul:
     travel-destination-service:
       path: /travelDestination/**
       service-id: travel-destination-service
+    recommendation-service:
+      path: /recommendation/**
+      service-id: recommendation-service
     user-service:
       path: /user/**
       service-id: user-service
@@ -45,6 +48,9 @@ zuul:
     travel-destination-service:
       path: /travelDestination/**
       service-id: travel-destination-service
+    recommendation-service:
+      path: /recommendation/**
+      service-id: recommendation-service
     user-service:
       path: /user/**
       service-id: user-service
