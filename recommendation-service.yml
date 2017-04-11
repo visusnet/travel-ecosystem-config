@@ -27,7 +27,6 @@ logging:
     org.springframework.context.annotation.ConfigurationClassPostProcessor: ERROR
     org.springframework.boot.web.servlet: ERROR
     com.netflix.config.sources.URLConfigurationSource: ERROR
-
 recommendation:
   dataPath: ${DATA_PATH:/data/spark/data}
   modelPath: ${MODEL_PATH:/data/spark/model}
