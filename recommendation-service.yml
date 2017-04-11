@@ -1,0 +1,33 @@
+spring:
+  profiles: docker
+  application:
+    name: recommender-service
+server:
+  port: 7777
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${DISCOVERY_SERVICE:discovery-service}:8761/eureka/
+logging:
+  level:
+    org.apache.spark: WARN
+    org.apache.parquet: WARN
+    org.apache.parquet.hadoop: ERROR
+    org.hibernate.validator.messageinterpolation: ERROR
+    org.apache.hadoop.util.NativeCodeLoader: ERROR
+    org.apache.hadoop.conf.Configuration: ERROR
+    org.apache.hadoop.mapred: ERROR
+    org.springframework.jmx.export.annotation: ERROR
+    org.springframework.context.support.PostProcessorRegistrationDelegate: ERROR
+    org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor: ERROR
+    org.springframework.context.annotation.ConfigurationClassPostProcessor: ERROR
+    org.springframework.boot.web.servlet: ERROR
+    com.netflix.config.sources.URLConfigurationSource: ERROR
+
+recommendation:
+  dataPath: ${DATA_PATH:/Users/alexander/Desktop}
+  modelPath: ${MODEL_PATH:/Users/alexander/Desktop}
