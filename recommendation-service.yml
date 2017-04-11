@@ -29,5 +29,5 @@ logging:
     com.netflix.config.sources.URLConfigurationSource: ERROR
 
 recommendation:
-  dataPath: ${DATA_PATH:/Users/alexander/Desktop}
-  modelPath: ${MODEL_PATH:/Users/alexander/Desktop}
+  dataPath: ${DATA_PATH:/data/spark/data}
+  modelPath: ${MODEL_PATH:/data/spark/model}
