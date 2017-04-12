@@ -7,7 +7,7 @@ server:
 security:
   oauth2:
     resource:
-      filter-order: 3
+      filter-order: 2
       jwt:
         key-value: aTokenSigningKey
     client:
