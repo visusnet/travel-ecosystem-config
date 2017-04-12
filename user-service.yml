@@ -53,6 +53,7 @@ spring:
     username: root
     password: dbpass
     initialize: true
+    continue-on-error: false
   jpa:
     hibernate:
       ddl-auto: create-drop
