@@ -7,7 +7,7 @@ server:
 security:
   oauth2:
     resource:
-      filter-order: 2
+      filter-order: 3
       jwt:
         key-value: aTokenSigningKey
     client:
@@ -33,11 +33,11 @@ logging:
     org.apache.hadoop.util.NativeCodeLoader: ERROR
     org.apache.hadoop.conf.Configuration: ERROR
     org.apache.hadoop.mapred: ERROR
-#    org.springframework.jmx.export.annotation: ERROR
-#    org.springframework.context.support.PostProcessorRegistrationDelegate: ERROR
-#    org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor: ERROR
-#    org.springframework.context.annotation.ConfigurationClassPostProcessor: ERROR
-#    org.springframework.boot.web.servlet: ERROR
+    org.springframework.jmx.export.annotation: ERROR
+    org.springframework.context.support.PostProcessorRegistrationDelegate: ERROR
+    org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor: ERROR
+    org.springframework.context.annotation.ConfigurationClassPostProcessor: ERROR
+    org.springframework.boot.web.servlet: ERROR
     com.netflix.config.sources.URLConfigurationSource: ERROR
 recommendation:
   dataPath: ${DATA_PATH:/data/spark/data}
