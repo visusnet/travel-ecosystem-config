@@ -4,6 +4,14 @@ spring:
     name: recommendation-service
 server:
   port: 7777
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+      jwt:
+        key-value: aTokenSigningKey
+    client:
+      client-id: acme
 eureka:
   instance:
     prefer-ip-address: true
